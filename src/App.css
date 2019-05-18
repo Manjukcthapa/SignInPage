@@ -1,0 +1,86 @@
+
+
+
+
+.App{
+  
+  display: flex; 
+  flex-direction:row;
+  justify-content: center;
+  height:700px;
+}
+
+.maindiv{
+  width:100%;  
+}
+
+.maindiv2{
+  background-color:#052622;
+}
+
+.maindiv1{
+  background: #16A493;
+  
+}
+
+.navlink1{
+  color:white;
+  text-decoration: none;
+
+}
+
+.nav{
+  margin-top: 200px;
+  margin-left: 30px;
+  font-size: 25px;
+
+}
+
+.button2{
+font-size: 17px;
+border-radius:15px;
+width:80px;
+margin-top: 20px;
+float: right;
+background-color:#16A493;
+margin-left:10px;
+}
+
+.button3{
+  font-size: 17px;
+  border-radius:15px;
+  width:80px;
+  margin-top: 20px;
+  float: right;
+  background-color:#16A493;
+  
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

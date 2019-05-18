@@ -1,0 +1,72 @@
+.about {
+    color: white;
+}
+
+.siginform {
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.accountlink {
+    color: white;
+}
+
+.inputform {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid grey;
+    margin-top: 5px;
+    font-size: 16px;
+    width: 400px;
+    height: 30px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    color:white;
+
+}
+
+.button1 {
+    margin-top: 40px;
+    text-transform: uppercase;
+    background: #16A493;
+    padding: 20px;
+    width: 200px;
+    border-radius: 20px;
+    display: inline-block;
+    font-size: 15px;
+    color:white;
+}
+
+.buttun :hover {
+    color: #ffffff !important;
+    background: #f6b93b;
+    border-color: #f6b93b !important;
+    transition: all 0.4s ease 0s;
+}
+
+.inputform1{
+    margin-top: 40px;
+}
+
+.checkbox{
+    margin-top: 30px;
+}
+
+.checkbox2{
+    width:40px;
+}
+
+.checkbox3{
+    font-size: 15px;
+    color:white;
+}
+
+.buttontext{
+    font-size: 15px;
+    color:white;
+}
+
+.about1{
+    margin-top: 40px;
+}
