@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import { Link } from "react-router-dom";
-import "./form.css"
-
-
+import "./form.css";
+import { NavLink, Link } from 'react-router-dom';
+import { Redirect } from 'react-router-dom'
 
 class SignIn extends Component {
     constructor() {
@@ -10,7 +9,8 @@ class SignIn extends Component {
 
         this.state = {
             email: "",
-            password: ""
+            password: "",
+            authenticated: false
         }
     }
 
@@ -24,43 +24,53 @@ class SignIn extends Component {
     handleSubmit = e => {
         e.preventDefault();
         let password = localStorage.getItem(this.state.email)
-
         if (password === this.state.password) {
-            console.log('Correct password')
+            this.setState({ authenticated: true })
         } else {
-            console.log('Wrong password')
+            this.setState({ authenticated: false })
         }
-        console.log("This form was submitted with following data");
-        console.log(this.state)
-
-       
     }
 
     render() {
         return (
+            <div>
+          <div className="App">
+           <div className="maindiv maindiv1">
+           </div>
+          <div className="maindiv maindiv2"> 
+             <div>
+              <Link to="/SignIn"><button className="button2">SigIn </button></Link>
+              <Link to="/SignUp" ><button className="button3">SignUp</button></Link>
+            </div>
+            <div className="nav">
+              <NavLink className="navlink1" to="/SignIn" >Sign In or </NavLink>
+              <NavLink className="navlink1" to="/SignUp">Sign Up</NavLink>
+            </div> 
             <div className="siginform">
-                <form onSubmit={this.handleSubmit}>
+                    <form onSubmit={this.handleSubmit}>
                     <div className="about">
                         <div>
                             <span>Email Address</span>
                         </div>
-                        <input  className="inputform" type="email" id="email" placeholder="Enter your email" name="email" value={this.state.email} onChange={this.handleChange} />
+                        <input className="inputform" type="email" id="email" placeholder="Enter your email" name="email" value={this.state.email} onChange={this.handleChange} />
                     </div>
 
                     <div className="about inputform1">
                         <div>
                             <span>PassWord</span>
                         </div>
-                        <input className="inputform "  type="password" id="password" placeholder="Enter PassWord" name="password" value={this.state.password} onChange={this.handleChange} />
+                        <input className="inputform " type="password" id="password" placeholder="Enter PassWord" name="password" value={this.state.password} onChange={this.handleChange} />
                     </div>
 
                     <div>
-                        <button  className="button1"type="submit">Sign In</button> <Link className="accountlink" to="/SignUp">Create an account</Link>
+                        <button className="button1" type="submit" >Sign In</button><Link className="accountlink" to="/SignUp">Create an account</Link>
                     </div>
-                </form>
-
-
+                </form>     
             </div>
+            { this.state.authenticated && <Redirect to='/Authentication' /> }
+            </div>
+            </div>            </div>
+
         )
     }
 }

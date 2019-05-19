@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import { Link } from "react-router-dom"
-import "./form.css"
-
+import "./form.css";
+import { NavLink, Link } from 'react-router-dom';
 
 class SignUp extends Component {
     constructor() {
@@ -34,6 +33,19 @@ class SignUp extends Component {
 
     render() {
         return (
+          <div>
+          <div className="App">
+           <div className="maindiv maindiv1">
+           </div>
+          <div className="maindiv maindiv2"> 
+             <div>
+              <Link to="/SignIn"><button className="button2">SigIn </button></Link>
+              <Link to="/SignUp" ><button className="button3">SignUp</button></Link>
+            </div>
+            <div className="nav">
+              <NavLink className="navlink1" to="/SignIn" >Sign In or </NavLink>
+              <NavLink className="navlink1" to="/SignUp">Sign Up</NavLink>
+            </div> 
             <div className="siginform">
                 <form onSubmit={this.handleSubmit}>
                     <div className="about about1">
@@ -68,8 +80,7 @@ class SignUp extends Component {
                     <button className="button1" type="submit">SignUp</button> <Link  className="buttontext" to="/SignIn">I am already Member</Link>
                     </div>
                 </form>
-
-
+                </div>  </div>  </div>  
             </div>
         )
     }
