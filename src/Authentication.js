@@ -22,7 +22,7 @@ getWeather = async (e) => {
   const City = e.target.elements.city.value;
   const Country = e.target.elements.country.value;
 
-  const api_call = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${City},${Country}&appid=${Api_Key}`);
+  const api_call = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${City},${Country}&appid=${Api_Key}&units=imperial `);
   
   const response = await api_call.json();
   
