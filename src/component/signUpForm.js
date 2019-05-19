@@ -27,6 +27,7 @@ class SignUp extends Component {
     handleSubmit = e => {
         e.preventDefault();
         console.log("This form was submitted with following data");
+        localStorage.setItem(this.state.email, this.state.password)
         console.log(this.state)
     }
 

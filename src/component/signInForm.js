@@ -23,8 +23,17 @@ class SignIn extends Component {
 
     handleSubmit = e => {
         e.preventDefault();
+        let password = localStorage.getItem(this.state.email)
+
+        if (password === this.state.password) {
+            console.log('Correct password')
+        } else {
+            console.log('Wrong password')
+        }
         console.log("This form was submitted with following data");
         console.log(this.state)
+
+       
     }
 
     render() {

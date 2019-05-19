@@ -1,0 +1,110 @@
+.weather{
+    margin-left: 400px;
+    margin-top:70px;
+   
+}
+
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://images.unsplash.com/photo-1544766230-594734c916df?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+   
+  
+}
+
+
+ p{
+     color:white;
+ }
+
+ .form{
+    width:500px;
+    background: #0B65BE;
+    text-align: center;
+    color:white;  
+    height:120px;
+ }
+
+/* .weatherbackground{
+    width:500px;
+    background: #0B65BE;
+    text-align: center;
+    color:white;
+} */
+
+.weathform{
+    text-align: center; 
+   
+}
+
+
+.aboutus{
+    background: #0A2C4E;
+    height:440px;
+    width:500px;
+}
+
+.input{
+    margin-top: 90px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid grey;
+    font-size: 16px;
+    width: 400px;
+    height: 30px;
+    border-left: 0px;
+    border-right: 0px;
+    color:white;
+    
+}
+
+.input1{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid grey;
+    font-size: 16px;
+    width: 400px;
+    height: 30px;
+    border-left: 0px;
+    border-right: 0px;
+    color:white;
+}
+
+.button{
+    font-size: 15px;
+    border-radius: 6px;
+    border:1px solid grey;
+    size:40px;
+   background-color:#0B65BE;
+   color:white;
+   margin-top: 10px;
+   height:30px;
+}
+
+
+.description{
+    text-align: center;
+}
+ 
+.img{
+    height:40px;
+    width:30px;
+    margin-left: 5px;
+    margin-top: 10x;
+}
+
+.para{
+    margin-top: 70px;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
