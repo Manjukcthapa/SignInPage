@@ -101,6 +101,7 @@ body{
 .buttons{
     background: #0B65BE;
     color:white;
+    margin-right: 20px;
 }
 
 .navlink{
@@ -112,7 +113,7 @@ body{
 
 .images{
     height:60px;
-    margin-left: 5px;
+    margin-left: 20px;
 }
 
 
