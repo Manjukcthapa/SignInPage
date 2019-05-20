@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import Titles from "./component/title"
 import WeatherForm from "./component/weatherForm"
 import Weather from "./component/weather"
+import {Link} from "react-router-dom"
 
 
 const Api_Key = '4f2ab2d14bf3524b73005c44aa2a1403';
@@ -41,6 +42,11 @@ class Authentication extends Component {
 
   render() {
     return (
+      <div >
+        <div className="navlink">
+             <img className="images"src ="https://image.flaticon.com/icons/svg/1146/1146885.svg"/>
+              <Link to="/SignIn" ><button className="button2 buttons">SignOut</button></Link>  
+        </div>
       <div className="weather">
         <div className="form">
           <Titles />
@@ -55,6 +61,7 @@ class Authentication extends Component {
             description={this.state.description}
             error={this.state.error} />
         </div>
+      </div>
       </div>
     )
   }

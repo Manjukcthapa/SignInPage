@@ -10,7 +10,7 @@ class SignIn extends Component {
         this.state = {
             email: "",
             password: "",
-            authenticated: false
+            Authentication: false
         }
     }
 
@@ -25,9 +25,9 @@ class SignIn extends Component {
         e.preventDefault();
         let password = localStorage.getItem(this.state.email)
         if (password === this.state.password) {
-            this.setState({ authenticated: true })
+            this.setState({ Authentication: true })
         } else {
-            this.setState({ authenticated: false })
+            this.setState({ Authentication: false })
         }
     }
 
@@ -39,7 +39,7 @@ class SignIn extends Component {
            </div>
           <div className="maindiv maindiv2"> 
              <div>
-              <Link to="/SignIn"><button className="button2">SigIn </button></Link>
+              <Link to="/SignIn"><button className="button2">SignIn </button></Link>
               <Link to="/SignUp" ><button className="button3">SignUp</button></Link>
             </div>
             <div className="nav">
@@ -67,9 +67,10 @@ class SignIn extends Component {
                     </div>
                 </form>     
             </div>
-            { this.state.authenticated && <Redirect to='/Authentication' /> }
+            { this.state.Authentication && <Redirect to='/Authentication' /> }
             </div>
-            </div>            </div>
+            </div>          
+              </div>
 
         )
     }

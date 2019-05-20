@@ -1,9 +1,10 @@
 import React from "react"
 import "../auth.css"
 
-
  const WeatherForm = props => {
      return(
+         <div className= "body">
+            
          <div className="weathform">
              <form  onSubmit={props.getWeather}>
              <div >
@@ -12,6 +13,7 @@ import "../auth.css"
              </div>
              <button className="button">Weather</button>
              </form>
+         </div>
          </div>
      )
  }
